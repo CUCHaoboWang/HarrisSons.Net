@@ -1,0 +1,8 @@
+E:\Information Technology\212IT - Advanced Software Development\Harris&Sons Consulting\HarrisSons.Net\HarrisSons.Net.Data\bin\Debug\netcoreapp2.1\HarrisSons.Net.Data.deps.json
+E:\Information Technology\212IT - Advanced Software Development\Harris&Sons Consulting\HarrisSons.Net\HarrisSons.Net.Data\bin\Debug\netcoreapp2.1\HarrisSons.Net.Data.dll
+E:\Information Technology\212IT - Advanced Software Development\Harris&Sons Consulting\HarrisSons.Net\HarrisSons.Net.Data\bin\Debug\netcoreapp2.1\HarrisSons.Net.Data.pdb
+E:\Information Technology\212IT - Advanced Software Development\Harris&Sons Consulting\HarrisSons.Net\HarrisSons.Net.Data\obj\Debug\netcoreapp2.1\HarrisSons.Net.Data.csprojAssemblyReference.cache
+E:\Information Technology\212IT - Advanced Software Development\Harris&Sons Consulting\HarrisSons.Net\HarrisSons.Net.Data\obj\Debug\netcoreapp2.1\HarrisSons.Net.Data.AssemblyInfoInputs.cache
+E:\Information Technology\212IT - Advanced Software Development\Harris&Sons Consulting\HarrisSons.Net\HarrisSons.Net.Data\obj\Debug\netcoreapp2.1\HarrisSons.Net.Data.AssemblyInfo.cs
+E:\Information Technology\212IT - Advanced Software Development\Harris&Sons Consulting\HarrisSons.Net\HarrisSons.Net.Data\obj\Debug\netcoreapp2.1\HarrisSons.Net.Data.dll
+E:\Information Technology\212IT - Advanced Software Development\Harris&Sons Consulting\HarrisSons.Net\HarrisSons.Net.Data\obj\Debug\netcoreapp2.1\HarrisSons.Net.Data.pdb
