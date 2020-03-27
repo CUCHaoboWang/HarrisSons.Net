@@ -14,6 +14,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "3.1.1",
           "Microsoft.EntityFrameworkCore.Tools": "3.1.1",
+          "Microsoft.Extensions.DependencyInjection": "3.1.1",
           "Pomelo.EntityFrameworkCore.MySql": "3.1.1"
         },
         "runtime": {

@@ -16,6 +16,12 @@ namespace HarrisSons.Net.Data.Tools
         public  DbSet<BusinessContact> BusinessContacts { get; set; }
         public DbSet<Client> Clients { get; set; }
         public DbSet<Employee> Employees { get; set; }
+        public DbQuery<vwPersonalContact> vwPersonalContacts { get; set; }
+        public DbQuery<vwPersonalContactDetail> vwPersonalContactDetails { get; set; }
+        public DbQuery<vwBusinessContact> vwBusinessContacts { get; set; }
+        public DbQuery<vwBusinessContactDetail> vwBusinessContactDetails { get; set; }
+
+
         //public virtual DbSet<UserRoleClaim> AspNetRoleClaims { get; set; }
         //public virtual DbSet<UserRole> UserRoles { get; set; }
         //public virtual DbSet<UserClaim> UserClaims { get; set; }

@@ -29,12 +29,14 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashBoard));
-            this.panelSideBar = new System.Windows.Forms.Panel();
+            this.panelAddress1 = new System.Windows.Forms.Panel();
+            this.richTextBoxAddressLine1 = new System.Windows.Forms.RichTextBox();
+            this.labelAddressLine1 = new System.Windows.Forms.Label();
             this.panelHeadBar = new System.Windows.Forms.Panel();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panelMain = new System.Windows.Forms.Panel();
             this.panelContactList = new System.Windows.Forms.Panel();
-            this.dgvContactList = new System.Windows.Forms.DataGridView();
+            this.dgvContactTable = new System.Windows.Forms.DataGridView();
             this.tabControlContact = new System.Windows.Forms.TabControl();
             this.tabPagePersonalContact = new System.Windows.Forms.TabPage();
             this.textBoxPersonContactSearch = new System.Windows.Forms.TextBox();
@@ -50,23 +52,65 @@
             this.btnBusinessContactEdit = new System.Windows.Forms.Button();
             this.btnBusinessContactAdd = new System.Windows.Forms.Button();
             this.panelBusinessContactOperation = new System.Windows.Forms.Panel();
+            this.labelAddressLine2 = new System.Windows.Forms.Label();
+            this.panelAddress2 = new System.Windows.Forms.Panel();
+            this.richTextBoxAddressLine2 = new System.Windows.Forms.RichTextBox();
+            this.richTextBoxCity = new System.Windows.Forms.RichTextBox();
+            this.labelCity = new System.Windows.Forms.Label();
+            this.panelAddress3 = new System.Windows.Forms.Panel();
+            this.richTextBoxState = new System.Windows.Forms.RichTextBox();
+            this.labelState = new System.Windows.Forms.Label();
+            this.panelAddress4 = new System.Windows.Forms.Panel();
+            this.richTextBoxCountry = new System.Windows.Forms.RichTextBox();
+            this.labelCountry = new System.Windows.Forms.Label();
+            this.panelAddress5 = new System.Windows.Forms.Panel();
+            this.richTextBoxPostalCode = new System.Windows.Forms.RichTextBox();
+            this.labelPostalCode = new System.Windows.Forms.Label();
+            this.panelAddress6 = new System.Windows.Forms.Panel();
+            this.panelAddress1.SuspendLayout();
             this.panelHeadBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.panelMain.SuspendLayout();
             this.panelContactList.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvContactList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvContactTable)).BeginInit();
             this.tabControlContact.SuspendLayout();
             this.tabPagePersonalContact.SuspendLayout();
             this.tabPageBusinessContact.SuspendLayout();
+            this.panelAddress2.SuspendLayout();
+            this.panelAddress3.SuspendLayout();
+            this.panelAddress4.SuspendLayout();
+            this.panelAddress5.SuspendLayout();
+            this.panelAddress6.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panelSideBar
+            // panelAddress1
             // 
-            this.panelSideBar.BackColor = System.Drawing.Color.White;
-            this.panelSideBar.Location = new System.Drawing.Point(0, 50);
-            this.panelSideBar.Name = "panelSideBar";
-            this.panelSideBar.Size = new System.Drawing.Size(200, 630);
-            this.panelSideBar.TabIndex = 0;
+            this.panelAddress1.BackColor = System.Drawing.Color.White;
+            this.panelAddress1.Controls.Add(this.richTextBoxAddressLine1);
+            this.panelAddress1.Controls.Add(this.labelAddressLine1);
+            this.panelAddress1.Location = new System.Drawing.Point(0, 50);
+            this.panelAddress1.Name = "panelAddress1";
+            this.panelAddress1.Size = new System.Drawing.Size(200, 104);
+            this.panelAddress1.TabIndex = 0;
+            // 
+            // richTextBoxAddressLine1
+            // 
+            this.richTextBoxAddressLine1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.richTextBoxAddressLine1.Enabled = false;
+            this.richTextBoxAddressLine1.Location = new System.Drawing.Point(12, 27);
+            this.richTextBoxAddressLine1.Name = "richTextBoxAddressLine1";
+            this.richTextBoxAddressLine1.Size = new System.Drawing.Size(180, 60);
+            this.richTextBoxAddressLine1.TabIndex = 1;
+            this.richTextBoxAddressLine1.Text = "";
+            // 
+            // labelAddressLine1
+            // 
+            this.labelAddressLine1.AutoSize = true;
+            this.labelAddressLine1.Location = new System.Drawing.Point(12, 3);
+            this.labelAddressLine1.Name = "labelAddressLine1";
+            this.labelAddressLine1.Size = new System.Drawing.Size(118, 21);
+            this.labelAddressLine1.TabIndex = 0;
+            this.labelAddressLine1.Text = "Address Line 1:";
             // 
             // panelHeadBar
             // 
@@ -99,36 +143,29 @@
             // 
             // panelContactList
             // 
-            this.panelContactList.Controls.Add(this.dgvContactList);
+            this.panelContactList.Controls.Add(this.dgvContactTable);
             this.panelContactList.Location = new System.Drawing.Point(4, 80);
             this.panelContactList.Name = "panelContactList";
             this.panelContactList.Size = new System.Drawing.Size(1056, 542);
             this.panelContactList.TabIndex = 1;
             // 
-            // dgvContactList
+            // dgvContactTable
             // 
-            this.dgvContactList.AllowUserToAddRows = false;
-            this.dgvContactList.AllowUserToDeleteRows = false;
-            this.dgvContactList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvContactList.BackgroundColor = System.Drawing.Color.White;
-            this.dgvContactList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvContactList.Dock = System.Windows.Forms.DockStyle.Fill;
-
-            //this.dgvContactList.Anchor = ((System.Windows.Forms.AnchorStyles)((((
-            //    System.Windows.Forms.AnchorStyles.Top 
-            //    | System.Windows.Forms.AnchorStyles.Bottom) 
-            //    | System.Windows.Forms.AnchorStyles.Left) 
-            //    | System.Windows.Forms.AnchorStyles.Right)));
-
-            this.dgvContactList.Location = new System.Drawing.Point(0, 0);
-            this.dgvContactList.Name = "dgvContactList";
-            this.dgvContactList.Size = new System.Drawing.Size(1056, 542);
-            this.dgvContactList.TabIndex = 0;
-            this.dgvContactList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvContactList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(54)))), ((int)(((byte)(101)))));
-            this.dgvContactList.MultiSelect = false;
-            this.dgvContactList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvContactList.SelectionChanged += new System.EventHandler(this.dgvContactList_SelectionChanged);
+            this.dgvContactTable.AllowUserToAddRows = false;
+            this.dgvContactTable.AllowUserToDeleteRows = false;
+            this.dgvContactTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvContactTable.BackgroundColor = System.Drawing.Color.White;
+            this.dgvContactTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvContactTable.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvContactTable.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dgvContactTable.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(54)))), ((int)(((byte)(101)))));
+            this.dgvContactTable.Location = new System.Drawing.Point(0, 0);
+            this.dgvContactTable.MultiSelect = false;
+            this.dgvContactTable.Name = "dgvContactTable";
+            this.dgvContactTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvContactTable.Size = new System.Drawing.Size(1056, 542);
+            this.dgvContactTable.TabIndex = 0;
+            this.dgvContactTable.SelectionChanged += new System.EventHandler(this.dgvContactTable_SelectionChanged);
             // 
             // tabControlContact
             // 
@@ -140,6 +177,7 @@
             this.tabControlContact.SelectedIndex = 0;
             this.tabControlContact.Size = new System.Drawing.Size(1064, 74);
             this.tabControlContact.TabIndex = 0;
+            this.tabControlContact.SelectedIndexChanged += new System.EventHandler(this.tabControlContact_SelectedIndexChanged);
             // 
             // tabPagePersonalContact
             // 
@@ -305,38 +343,203 @@
             this.panelBusinessContactOperation.Size = new System.Drawing.Size(1056, 40);
             this.panelBusinessContactOperation.TabIndex = 0;
             // 
+            // labelAddressLine2
+            // 
+            this.labelAddressLine2.AutoSize = true;
+            this.labelAddressLine2.Location = new System.Drawing.Point(12, 3);
+            this.labelAddressLine2.Name = "labelAddressLine2";
+            this.labelAddressLine2.Size = new System.Drawing.Size(121, 21);
+            this.labelAddressLine2.TabIndex = 0;
+            this.labelAddressLine2.Text = "Address Line 2:";
+            // 
+            // panelAddress2
+            // 
+            this.panelAddress2.BackColor = System.Drawing.Color.White;
+            this.panelAddress2.Controls.Add(this.richTextBoxAddressLine2);
+            this.panelAddress2.Controls.Add(this.labelAddressLine2);
+            this.panelAddress2.Location = new System.Drawing.Point(0, 155);
+            this.panelAddress2.Name = "panelAddress2";
+            this.panelAddress2.Size = new System.Drawing.Size(200, 104);
+            this.panelAddress2.TabIndex = 0;
+            // 
+            // richTextBoxAddressLine2
+            // 
+            this.richTextBoxAddressLine2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.richTextBoxAddressLine2.Enabled = false;
+            this.richTextBoxAddressLine2.Location = new System.Drawing.Point(12, 27);
+            this.richTextBoxAddressLine2.Name = "richTextBoxAddressLine2";
+            this.richTextBoxAddressLine2.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.richTextBoxAddressLine2.Size = new System.Drawing.Size(180, 60);
+            this.richTextBoxAddressLine2.TabIndex = 1;
+            this.richTextBoxAddressLine2.Text = "";
+            // 
+            // richTextBoxCity
+            // 
+            this.richTextBoxCity.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.richTextBoxCity.Enabled = false;
+            this.richTextBoxCity.Location = new System.Drawing.Point(12, 27);
+            this.richTextBoxCity.Name = "richTextBoxCity";
+            this.richTextBoxCity.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.richTextBoxCity.Size = new System.Drawing.Size(180, 60);
+            this.richTextBoxCity.TabIndex = 1;
+            this.richTextBoxCity.Text = "";
+            // 
+            // labelCity
+            // 
+            this.labelCity.AutoSize = true;
+            this.labelCity.Location = new System.Drawing.Point(12, 3);
+            this.labelCity.Name = "labelCity";
+            this.labelCity.Size = new System.Drawing.Size(42, 21);
+            this.labelCity.TabIndex = 0;
+            this.labelCity.Text = "City:";
+            // 
+            // panelAddress3
+            // 
+            this.panelAddress3.BackColor = System.Drawing.Color.White;
+            this.panelAddress3.Controls.Add(this.richTextBoxCity);
+            this.panelAddress3.Controls.Add(this.labelCity);
+            this.panelAddress3.Location = new System.Drawing.Point(0, 260);
+            this.panelAddress3.Name = "panelAddress3";
+            this.panelAddress3.Size = new System.Drawing.Size(200, 104);
+            this.panelAddress3.TabIndex = 0;
+            // 
+            // richTextBoxState
+            // 
+            this.richTextBoxState.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.richTextBoxState.Enabled = false;
+            this.richTextBoxState.Location = new System.Drawing.Point(12, 27);
+            this.richTextBoxState.Name = "richTextBoxState";
+            this.richTextBoxState.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.richTextBoxState.Size = new System.Drawing.Size(180, 60);
+            this.richTextBoxState.TabIndex = 1;
+            this.richTextBoxState.Text = "";
+            // 
+            // labelState
+            // 
+            this.labelState.AutoSize = true;
+            this.labelState.Location = new System.Drawing.Point(12, 3);
+            this.labelState.Name = "labelState";
+            this.labelState.Size = new System.Drawing.Size(52, 21);
+            this.labelState.TabIndex = 0;
+            this.labelState.Text = "State:";
+            // 
+            // panelAddress4
+            // 
+            this.panelAddress4.BackColor = System.Drawing.Color.White;
+            this.panelAddress4.Controls.Add(this.richTextBoxState);
+            this.panelAddress4.Controls.Add(this.labelState);
+            this.panelAddress4.Location = new System.Drawing.Point(0, 365);
+            this.panelAddress4.Name = "panelAddress4";
+            this.panelAddress4.Size = new System.Drawing.Size(200, 104);
+            this.panelAddress4.TabIndex = 0;
+            // 
+            // richTextBoxCountry
+            // 
+            this.richTextBoxCountry.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.richTextBoxCountry.Enabled = false;
+            this.richTextBoxCountry.Location = new System.Drawing.Point(12, 27);
+            this.richTextBoxCountry.Name = "richTextBoxCountry";
+            this.richTextBoxCountry.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.richTextBoxCountry.Size = new System.Drawing.Size(180, 60);
+            this.richTextBoxCountry.TabIndex = 1;
+            this.richTextBoxCountry.Text = "";
+            // 
+            // labelCountry
+            // 
+            this.labelCountry.AutoSize = true;
+            this.labelCountry.Location = new System.Drawing.Point(12, 3);
+            this.labelCountry.Name = "labelCountry";
+            this.labelCountry.Size = new System.Drawing.Size(73, 21);
+            this.labelCountry.TabIndex = 0;
+            this.labelCountry.Text = "Country:";
+            // 
+            // panelAddress5
+            // 
+            this.panelAddress5.BackColor = System.Drawing.Color.White;
+            this.panelAddress5.Controls.Add(this.richTextBoxCountry);
+            this.panelAddress5.Controls.Add(this.labelCountry);
+            this.panelAddress5.Location = new System.Drawing.Point(0, 470);
+            this.panelAddress5.Name = "panelAddress5";
+            this.panelAddress5.Size = new System.Drawing.Size(200, 104);
+            this.panelAddress5.TabIndex = 0;
+            // 
+            // richTextBoxPostalCode
+            // 
+            this.richTextBoxPostalCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.richTextBoxPostalCode.Enabled = false;
+            this.richTextBoxPostalCode.Location = new System.Drawing.Point(12, 27);
+            this.richTextBoxPostalCode.Name = "richTextBoxPostalCode";
+            this.richTextBoxPostalCode.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.richTextBoxPostalCode.Size = new System.Drawing.Size(180, 60);
+            this.richTextBoxPostalCode.TabIndex = 1;
+            this.richTextBoxPostalCode.Text = "";
+            // 
+            // labelPostalCode
+            // 
+            this.labelPostalCode.AutoSize = true;
+            this.labelPostalCode.Location = new System.Drawing.Point(12, 3);
+            this.labelPostalCode.Name = "labelPostalCode";
+            this.labelPostalCode.Size = new System.Drawing.Size(100, 21);
+            this.labelPostalCode.TabIndex = 0;
+            this.labelPostalCode.Text = "Postal Code:";
+            // 
+            // panelAddress6
+            // 
+            this.panelAddress6.BackColor = System.Drawing.Color.White;
+            this.panelAddress6.Controls.Add(this.richTextBoxPostalCode);
+            this.panelAddress6.Controls.Add(this.labelPostalCode);
+            this.panelAddress6.Location = new System.Drawing.Point(0, 575);
+            this.panelAddress6.Name = "panelAddress6";
+            this.panelAddress6.Size = new System.Drawing.Size(200, 104);
+            this.panelAddress6.TabIndex = 0;
+            // 
             // DashBoard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.panelAddress6);
+            this.Controls.Add(this.panelAddress5);
+            this.Controls.Add(this.panelAddress4);
+            this.Controls.Add(this.panelAddress3);
+            this.Controls.Add(this.panelAddress2);
+            this.Controls.Add(this.panelAddress1);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelHeadBar);
-            this.Controls.Add(this.panelSideBar);
             this.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1280, 720);
             this.Name = "DashBoard";
-            this.Text = "DashBoard";
+            this.Text = "Dashboard";
+            this.panelAddress1.ResumeLayout(false);
+            this.panelAddress1.PerformLayout();
             this.panelHeadBar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.panelMain.ResumeLayout(false);
             this.panelContactList.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvContactList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvContactTable)).EndInit();
             this.tabControlContact.ResumeLayout(false);
             this.tabPagePersonalContact.ResumeLayout(false);
             this.tabPagePersonalContact.PerformLayout();
             this.tabPageBusinessContact.ResumeLayout(false);
             this.tabPageBusinessContact.PerformLayout();
+            this.panelAddress2.ResumeLayout(false);
+            this.panelAddress2.PerformLayout();
+            this.panelAddress3.ResumeLayout(false);
+            this.panelAddress3.PerformLayout();
+            this.panelAddress4.ResumeLayout(false);
+            this.panelAddress4.PerformLayout();
+            this.panelAddress5.ResumeLayout(false);
+            this.panelAddress5.PerformLayout();
+            this.panelAddress6.ResumeLayout(false);
+            this.panelAddress6.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panelSideBar;
         private System.Windows.Forms.Panel panelHeadBar;
         private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.PictureBox pictureBoxLogo;
@@ -355,8 +558,26 @@
         private System.Windows.Forms.Button btnBusinessContactDelete;
         private System.Windows.Forms.Button btnBusinessContactSearch;
         private System.Windows.Forms.TextBox textBoxBusinessContactSearch;
-        private System.Windows.Forms.DataGridView dgvContactList;
+        private System.Windows.Forms.DataGridView dgvContactTable;
         private System.Windows.Forms.Panel panelContactList;
+        private System.Windows.Forms.Panel panelAddress1;
+        private System.Windows.Forms.Panel panelAddress2;
+        private System.Windows.Forms.Panel panelAddress3;
+        private System.Windows.Forms.Panel panelAddress4;
+        private System.Windows.Forms.Panel panelAddress5;
+        private System.Windows.Forms.Panel panelAddress6;
+        private System.Windows.Forms.Label labelAddressLine1;
+        private System.Windows.Forms.Label labelAddressLine2;
+        private System.Windows.Forms.Label labelCity;
+        private System.Windows.Forms.Label labelState;
+        private System.Windows.Forms.Label labelCountry;
+        private System.Windows.Forms.Label labelPostalCode;
+        private System.Windows.Forms.RichTextBox richTextBoxAddressLine1;
+        private System.Windows.Forms.RichTextBox richTextBoxAddressLine2;
+        private System.Windows.Forms.RichTextBox richTextBoxCity;
+        private System.Windows.Forms.RichTextBox richTextBoxState;
+        private System.Windows.Forms.RichTextBox richTextBoxCountry;
+        private System.Windows.Forms.RichTextBox richTextBoxPostalCode;
     }
 }
 

@@ -61,7 +61,6 @@ E:\Information Technology\212IT - Advanced Software Development\Harris&Sons Cons
 E:\Information Technology\212IT - Advanced Software Development\Harris&Sons Consulting\HarrisSons.Net\HarrisSons.Net.WinForm\bin\Debug\netcoreapp3.1\HarrisSons.Net.Data.pdb
 E:\Information Technology\212IT - Advanced Software Development\Harris&Sons Consulting\HarrisSons.Net\HarrisSons.Net.WinForm\obj\Debug\netcoreapp3.1\HarrisSons.Net.WinForm.csprojAssemblyReference.cache
 E:\Information Technology\212IT - Advanced Software Development\Harris&Sons Consulting\HarrisSons.Net\HarrisSons.Net.WinForm\obj\Debug\netcoreapp3.1\HarrisSons.Net.WinForm.csproj.GenerateResource.cache
-E:\Information Technology\212IT - Advanced Software Development\Harris&Sons Consulting\HarrisSons.Net\HarrisSons.Net.WinForm\obj\Debug\netcoreapp3.1\HarrisSons.Net.WinForm.csproj.CoreCompileInputs.cache
 E:\Information Technology\212IT - Advanced Software Development\Harris&Sons Consulting\HarrisSons.Net\HarrisSons.Net.WinForm\obj\Debug\netcoreapp3.1\HarrisSons.Net.WinForm.AssemblyInfoInputs.cache
 E:\Information Technology\212IT - Advanced Software Development\Harris&Sons Consulting\HarrisSons.Net\HarrisSons.Net.WinForm\obj\Debug\netcoreapp3.1\HarrisSons.Net.WinForm.AssemblyInfo.cs
 E:\Information Technology\212IT - Advanced Software Development\Harris&Sons Consulting\HarrisSons.Net\HarrisSons.Net.WinForm\obj\Debug\netcoreapp3.1\HarrisSons.Net.WinForm.csproj.CopyComplete
@@ -70,3 +69,8 @@ E:\Information Technology\212IT - Advanced Software Development\Harris&Sons Cons
 E:\Information Technology\212IT - Advanced Software Development\Harris&Sons Consulting\HarrisSons.Net\HarrisSons.Net.WinForm\obj\Debug\netcoreapp3.1\HarrisSons.Net.WinForm.genruntimeconfig.cache
 E:\Information Technology\212IT - Advanced Software Development\Harris&Sons Consulting\HarrisSons.Net\HarrisSons.Net.WinForm\obj\Debug\netcoreapp3.1\HarrisSons.Net.WinForm.DashBoard.resources
 E:\Information Technology\212IT - Advanced Software Development\Harris&Sons Consulting\HarrisSons.Net\HarrisSons.Net.WinForm\obj\Debug\netcoreapp3.1\HarrisSons.Net.WinForm.Properties.Resources.resources
+E:\Information Technology\212IT - Advanced Software Development\Harris&Sons Consulting\HarrisSons.Net\HarrisSons.Net.WinForm\obj\Debug\netcoreapp3.1\HarrisSons.Net.WinForm.csproj.CoreCompileInputs.cache
+E:\Information Technology\212IT - Advanced Software Development\Harris&Sons Consulting\HarrisSons.Net\HarrisSons.Net.WinForm\obj\Debug\netcoreapp3.1\HarrisSons.Net.WinForm.AddClient.resources
+E:\Information Technology\212IT - Advanced Software Development\Harris&Sons Consulting\HarrisSons.Net\HarrisSons.Net.WinForm\obj\Debug\netcoreapp3.1\HarrisSons.Net.WinForm.EditClient.resources
+E:\Information Technology\212IT - Advanced Software Development\Harris&Sons Consulting\HarrisSons.Net\HarrisSons.Net.WinForm\obj\Debug\netcoreapp3.1\HarrisSons.Net.WinForm.AddEmployee.resources
+E:\Information Technology\212IT - Advanced Software Development\Harris&Sons Consulting\HarrisSons.Net\HarrisSons.Net.WinForm\obj\Debug\netcoreapp3.1\HarrisSons.Net.WinForm.EditEmployee.resources

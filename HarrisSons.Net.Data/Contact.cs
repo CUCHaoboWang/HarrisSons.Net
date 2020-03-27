@@ -5,7 +5,7 @@ using System.Text;
 
 namespace HarrisSons.Net.Data
 {
-    public class Contact
+    public abstract class Contact
     {
         [Required]
         [DataType(DataType.EmailAddress)]

@@ -145,3 +145,4 @@ E:\Information Technology\212IT - Advanced Software Development\Harris&Sons Cons
 E:\Information Technology\212IT - Advanced Software Development\Harris&Sons Consulting\HarrisSons.Net\HarrisSons.Net.API\obj\Debug\netcoreapp3.1\HarrisSons.Net.API.dll
 E:\Information Technology\212IT - Advanced Software Development\Harris&Sons Consulting\HarrisSons.Net\HarrisSons.Net.API\obj\Debug\netcoreapp3.1\HarrisSons.Net.API.pdb
 E:\Information Technology\212IT - Advanced Software Development\Harris&Sons Consulting\HarrisSons.Net\HarrisSons.Net.API\obj\Debug\netcoreapp3.1\HarrisSons.Net.API.genruntimeconfig.cache
+E:\Information Technology\212IT - Advanced Software Development\Harris&Sons Consulting\HarrisSons.Net\HarrisSons.Net.API\obj\Debug\netcoreapp3.1\HarrisSons.Net.API.csprojAssemblyReference.cache

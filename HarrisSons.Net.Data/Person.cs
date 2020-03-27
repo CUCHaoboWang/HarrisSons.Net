@@ -6,7 +6,7 @@ using System.Text;
 
 namespace HarrisSons.Net.Data
 {
-    public class Person
+    public abstract class Person
     {
         [Required]
         [Display(Name = "First Name")]
