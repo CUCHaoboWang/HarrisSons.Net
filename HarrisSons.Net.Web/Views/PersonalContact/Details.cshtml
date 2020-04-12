@@ -1,0 +1,206 @@
+﻿@model HarrisSons.Net.Data.vwPersonalContactDetail
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="container-fluid">
+    <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a asp-action="Index"><b>Personal Contact</b></a></li>
+    </ul>
+</div>
+<div class="container-fluid">
+    <div class="title">
+        <strong>Personal Contact Details</strong>
+    </div>
+    <hr />
+
+    <div class="block-sm">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayNameFor(model => model.FirstName)
+                </b>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayFor(model => model.FirstName)
+                </b>
+            </div>
+        </div>
+    </div>
+    <div class="block-sm">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayNameFor(model => model.LastName)
+                </b>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayFor(model => model.LastName)
+                </b>
+            </div>
+        </div>
+    </div>
+    <div class="block-sm">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayNameFor(model => model.BirthDate)
+                </b>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayFor(model => model.BirthDate)
+                </b>
+            </div>
+        </div>
+    </div>
+    <div class="block-sm">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayNameFor(model => model.ContactDate)
+                </b>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayFor(model => model.ContactDate)
+                </b>
+            </div>
+        </div>
+    </div>
+    <div class="block-sm">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayNameFor(model => model.EmailAddress)
+                </b>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayFor(model => model.EmailAddress)
+                </b>
+            </div>
+        </div>
+    </div>
+    <div class="block-sm">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayNameFor(model => model.Telephone)
+                </b>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayFor(model => model.Telephone)
+                </b>
+            </div>
+        </div>
+    </div>
+    <div class="block-sm">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayNameFor(model => model.HomeTelephone)
+                </b>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayFor(model => model.HomeTelephone)
+                </b>
+            </div>
+        </div>
+    </div>
+    <div class="block-sm">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayNameFor(model => model.AddressLine1)
+                </b>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayFor(model => model.AddressLine1)
+                </b>
+            </div>
+        </div>
+    </div>
+    <div class="block-sm">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayNameFor(model => model.AddressLine2)
+                </b>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayFor(model => model.AddressLine2)
+                </b>
+            </div>
+        </div>
+    </div>
+    <div class="block-sm">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayNameFor(model => model.City)
+                </b>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayFor(model => model.City)
+                </b>
+            </div>
+        </div>
+    </div>
+    <div class="block-sm">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayNameFor(model => model.State)
+                </b>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayFor(model => model.State)
+                </b>
+            </div>
+        </div>
+    </div>
+    <div class="block-sm">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayNameFor(model => model.Country)
+                </b>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayFor(model => model.Country)
+                </b>
+            </div>
+        </div>
+    </div>
+    <div class="block-sm">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayNameFor(model => model.PostalCode)
+                </b>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayFor(model => model.PostalCode)
+                </b>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model.ClientID" class="btn btn-outline-primary">Edit</a>
+    </div>
+</div>
+
+

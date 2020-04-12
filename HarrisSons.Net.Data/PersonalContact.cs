@@ -13,6 +13,7 @@ namespace HarrisSons.Net.Data
         public int PersonalContactID { get; set; }
         [Required]
         [DataType(DataType.PhoneNumber)]
+        [Display(Name = "Home Telephone")]
         public string HomeTelephone { get; set; }
 
         public int AddressID { get; set; }

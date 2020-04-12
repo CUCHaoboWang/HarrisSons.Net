@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - HarrisSons.Net.Web</title>
+    <link rel="stylesheet" href="~/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/css/font.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,400,700">
+    <link rel="stylesheet" href="~/css/style.new.css" id="theme-stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid d-flex align-items-center justify-content-between">
+                <div class="navbar-header">
+                    <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">
+                        <div class="brand-text brand-big visible text-uppercase"><strong class="text-primary">Harris & Sons</strong></div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="d-flex align-items-stretch">
+        <nav id="sidebar">
+            <ul class="list-unstyled">
+                <li class="active"><a asp-area="" asp-controller="Home" asp-action="Index"> <i class="icon-home"></i><b>Home</b></a></li>
+                <li><a asp-area="" asp-controller="PersonalContact" asp-action="Index"> <i class="fa fa-address-book-o"></i><b>Personal Contact</b></a></li>
+                <li><a asp-area="" asp-controller="BusinessContact" asp-action="Index"> <i class="fa fa-address-book"></i><b>Business Conatct</b></a></li>
+            </ul>
+        </nav>
+        <div class="page-content">
+
+            @RenderBody()
+
+            <footer class="footer">
+                <div class="footer__block block no-margin-bottom">
+                    <div class="container-fluid text-center">
+                        <p class="no-margin-bottom">Copyright &copy; 2020 | All Rights Reserved | 212IT CU Coventry </p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/vendor/popper.js/umd/popper.min.js"></script>
+    <script src="~/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/vendor/jquery-validation/jquery.validate.min.js"></script>
+    <script src="~/vendor/chart.js/Chart.min.js"></script>
+    <script src="~/js/front.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

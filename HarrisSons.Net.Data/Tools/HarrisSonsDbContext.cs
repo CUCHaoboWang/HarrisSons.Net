@@ -7,6 +7,17 @@ namespace HarrisSons.Net.Data.Tools
 {
     public class HarrisSonsDbContext : DbContext
     {
+        private DbContextOptions<HarrisSonsDbContext> _options = null;
+
+        public HarrisSonsDbContext()
+        {
+
+        }
+
+        public HarrisSonsDbContext(DbContextOptions<HarrisSonsDbContext> options) : base(options)
+        {
+            _options = options;
+        }
 
         public DbSet<PayRate> PayRates { get; set; }
         public DbSet<Department> Departments { get; set; }
@@ -16,22 +27,18 @@ namespace HarrisSons.Net.Data.Tools
         public  DbSet<BusinessContact> BusinessContacts { get; set; }
         public DbSet<Client> Clients { get; set; }
         public DbSet<Employee> Employees { get; set; }
-        public DbQuery<vwPersonalContact> vwPersonalContacts { get; set; }
-        public DbQuery<vwPersonalContactDetail> vwPersonalContactDetails { get; set; }
-        public DbQuery<vwBusinessContact> vwBusinessContacts { get; set; }
-        public DbQuery<vwBusinessContactDetail> vwBusinessContactDetails { get; set; }
-
-
-        //public virtual DbSet<UserRoleClaim> AspNetRoleClaims { get; set; }
-        //public virtual DbSet<UserRole> UserRoles { get; set; }
-        //public virtual DbSet<UserClaim> UserClaims { get; set; }
-        //public virtual DbSet<UserLogin> UserLogins { get; set; }
-        //public virtual DbSet<User> Users { get; set; }
-        //public virtual DbSet<UserToken> UserTokens { get; set; }
+        public DbSet<vwPersonalContact> vwPersonalContacts { get; set; }
+        public DbSet<vwPersonalContactDetail> vwPersonalContactDetails { get; set; }
+        public DbSet<vwBusinessContact> vwBusinessContacts { get; set; }
+        public DbSet<vwBusinessContactDetail> vwBusinessContactDetails { get; set; }
+        public DbSet<vwPosition> vwPositions { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySql("server=harrissonsdb.cewsoho8wmni.us-east-1.rds.amazonaws.com;database=HarrisSonsDB;uid=admin;pwd=HarrisSons2020", x => x.ServerVersion("8.0.16-mysql"));
+            if (_options == null)
+            {
+                optionsBuilder.UseMySql("server=harrissonsdb.cewsoho8wmni.us-east-1.rds.amazonaws.com;database=HarrisSonsDB;uid=admin;pwd=HarrisSons2020", x => x.ServerVersion("8.0.16-mysql"));
+            }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -46,31 +53,6 @@ namespace HarrisSons.Net.Data.Tools
             modelBuilder.Entity<BusinessContact>().ToTable("tblBusinessContact");
             modelBuilder.Entity<Client>().ToTable("tblClient");
             modelBuilder.Entity<Employee>().ToTable("tblEmployee");
-
-            //modelBuilder.Entity<UserRole>()
-            //    .HasMany(e => e.UserRoleClaims)
-            //    .WithRequired(e => e.AspNetRole)
-            //    .HasForeignKey(e => e.RoleId);
-
-            //modelBuilder.Entity<UserRole>()
-            //    .HasMany(e => e.Users)
-            //    .WithMany(e => e.AspNetRoles)
-            //    .Map(m => m.ToTable("UserRoles").MapLeftKey("RoleId").MapRightKey("UserId"));
-
-            //modelBuilder.Entity<User>()
-            //    .HasMany(e => e.UserClaims)
-            //    .WithRequired(e => e.AspNetUser)
-            //    .HasForeignKey(e => e.UserId);
-
-            //modelBuilder.Entity<User>()
-            //    .HasMany(e => e.UserLogins)
-            //    .WithRequired(e => e.AspNetUser)
-            //    .HasForeignKey(e => e.UserId);
-
-            //modelBuilder.Entity<User>()
-            //    .HasMany(e => e.UserTokens)
-            //    .WithRequired(e => e.AspNetUser)
-            //    .HasForeignKey(e => e.UserId);
         }
     }
 }

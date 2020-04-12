@@ -9,9 +9,11 @@ namespace HarrisSons.Net.Data
     {
         [Required]
         [DataType(DataType.EmailAddress)]
+        [Display(Name = "Email Address")]
         public string EmailAddress { get; set; }
         [Required]
         [DataType(DataType.PhoneNumber)]
+        [Display(Name = "Phone")]
         public string Telephone { get; set; }
     }
 }

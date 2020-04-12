@@ -14,6 +14,7 @@ namespace HarrisSons.Net.Data
         [Required]
         public string Name { get; set; }
         [Required]
+        [Display(Name = "Group Name")]
         public string GroupName { get; set; }
 
         public ICollection<Position> Positions { get; set; }

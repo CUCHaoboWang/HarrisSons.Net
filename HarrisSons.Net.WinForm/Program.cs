@@ -1,4 +1,5 @@
 using HarrisSons.Net.Data.Tools;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -20,7 +21,9 @@ namespace HarrisSons.Net.WinForm
         [STAThread]
         static void Main()
         {
-            ServiceProvider = new ServiceCollection().AddDbContext<HarrisSonsDbContext>().BuildServiceProvider();
+            ServiceProvider = new ServiceCollection()
+                .AddDbContext<HarrisSonsDbContext>(options => options
+                .UseMySql(Configuration.GetConnectionString("MySQLDbConnection"), x => x.ServerVersion("8.0.16-mysql"))).BuildServiceProvider();
 
             DbInitializer.Initialize();
 

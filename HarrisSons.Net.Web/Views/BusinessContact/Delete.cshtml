@@ -1,0 +1,234 @@
+﻿@model HarrisSons.Net.Data.vwBusinessContactDetail
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<div class="container-fluid">
+    <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a asp-action="Index"><b>Business Contact</b></a></li>
+    </ul>
+</div>
+
+<div class="container-fluid">
+    <div class="title">
+        <strong>Business Contact Delete</strong>
+    </div>
+    <hr />
+
+    <div class="block-sm">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayNameFor(model => model.FirstName)
+                </b>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayFor(model => model.FirstName)
+                </b>
+            </div>
+        </div>
+    </div>
+    <div class="block-sm">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayNameFor(model => model.LastName)
+                </b>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayFor(model => model.LastName)
+                </b>
+            </div>
+        </div>
+    </div>
+    <div class="block-sm">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayNameFor(model => model.BirthDate)
+                </b>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayFor(model => model.BirthDate)
+                </b>
+            </div>
+        </div>
+    </div>
+    <div class="block-sm">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayNameFor(model => model.HireDate)
+                </b>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayFor(model => model.HireDate)
+                </b>
+            </div>
+        </div>
+    </div>
+    <div class="block-sm">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayNameFor(model => model.Position)
+                </b>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayFor(model => model.Position)
+                </b>
+            </div>
+        </div>
+    </div>
+    <div class="block-sm">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayNameFor(model => model.Department)
+                </b>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayFor(model => model.Department)
+                </b>
+            </div>
+        </div>
+    </div>
+    <div class="block-sm">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayNameFor(model => model.EmailAddress)
+                </b>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayFor(model => model.EmailAddress)
+                </b>
+            </div>
+        </div>
+    </div>
+    <div class="block-sm">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayNameFor(model => model.Telephone)
+                </b>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayFor(model => model.Telephone)
+                </b>
+            </div>
+        </div>
+    </div>
+    <div class="block-sm">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayNameFor(model => model.BusinessTelephone)
+                </b>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayFor(model => model.BusinessTelephone)
+                </b>
+            </div>
+        </div>
+    </div>
+    <div class="block-sm">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayNameFor(model => model.AddressLine1)
+                </b>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayFor(model => model.AddressLine1)
+                </b>
+            </div>
+        </div>
+    </div>
+    <div class="block-sm">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayNameFor(model => model.AddressLine2)
+                </b>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayFor(model => model.AddressLine2)
+                </b>
+            </div>
+        </div>
+    </div>
+    <div class="block-sm">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayNameFor(model => model.City)
+                </b>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayFor(model => model.City)
+                </b>
+            </div>
+        </div>
+    </div>
+    <div class="block-sm">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayNameFor(model => model.State)
+                </b>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayFor(model => model.State)
+                </b>
+            </div>
+        </div>
+    </div>
+    <div class="block-sm">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayNameFor(model => model.Country)
+                </b>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayFor(model => model.Country)
+                </b>
+            </div>
+        </div>
+    </div>
+    <div class="block-sm">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayNameFor(model => model.PostalCode)
+                </b>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <b class="d-block">
+                    @Html.DisplayFor(model => model.PostalCode)
+                </b>
+            </div>
+        </div>
+    </div>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="EmployeeID" />
+        <input type="submit" value="Delete" class="btn btn-outline-danger" />
+    </form>
+</div>

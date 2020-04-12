@@ -1,8 +1,11 @@
 ﻿using HarrisSons.Net.Data;
 using HarrisSons.Net.Data.Tools;
 using HarrisSons.Net.WinForm.Extensions;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Internal;
+using Microsoft.Extensions.DependencyInjection;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -101,9 +104,11 @@ namespace HarrisSons.Net.WinForm
         {
             if (DialogResult.Yes == MessageBox.Show("Are you sure you want to delete this employee?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
             {
-                var employeeID = _id;
-                var employee = _context.Employees.Find(employeeID);
-                _context.Employees.Remove(employee);
+                var address = _context.Employees.Where(i => i.EmployeeID == _id)
+                    .Include(i => i.BusinessContact)
+                    .ThenInclude(i => i.Address)
+                    .Select(i => i.BusinessContact.Address).FirstOrDefault();
+                _context.Addresses.Remove(address);
                 _context.SaveChanges();
                 UpdateDataGridView();
             }
@@ -119,7 +124,8 @@ namespace HarrisSons.Net.WinForm
             else
             {
                 dgvContactTable.DataSource = _businessContacts
-                    .Where(i => i.FirstName.Contains(text) || i.LastName.Contains(text) || i.EmailAddress.Contains(text) || i.Telephone.Contains(text) || i.BusinessTelephone.Contains(text))
+                    .Where(i => i.FirstName.Contains(text) || i.LastName.Contains(text) || i.Position.Contains(text) || i.Department.Contains(text)
+                    || i.EmailAddress.Contains(text) || i.Telephone.Contains(text) || i.BusinessTelephone.Contains(text))
                     .OrderBy(i => i.EmployeeID).ToList().ToDataTable();
             }
         }
@@ -147,9 +153,11 @@ namespace HarrisSons.Net.WinForm
         {
             if (DialogResult.Yes == MessageBox.Show("Are you sure you want to delete this client?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
             {
-                var clientID = _id;
-                var client = _context.Clients.Find(clientID);
-                _context.Clients.Remove(client);
+                var address = _context.Clients.Where(i => i.ClientID == _id)
+                    .Include(i => i.PersonalContact)
+                    .ThenInclude(i => i.Address)
+                    .Select(i => i.PersonalContact.Address).FirstOrDefault();
+                _context.Addresses.Remove(address);
                 _context.SaveChanges();
                 UpdateDataGridView();
             }
