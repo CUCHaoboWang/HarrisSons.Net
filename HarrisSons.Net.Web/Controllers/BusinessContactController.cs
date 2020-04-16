@@ -47,7 +47,6 @@ namespace HarrisSons.Net.Web.Controllers
         public IActionResult Create()
         {
             ViewData["Position"] = new SelectList(_context.Positions, "Name", "Name");
-            ViewData["Department"] = new SelectList(_context.Departments, "Name", "Name");
             return View();
         }
 
@@ -56,7 +55,7 @@ namespace HarrisSons.Net.Web.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("EmployeeID,FirstName,LastName,BirthDate,Position,Department,EmailAddress,Telephone,BusinessTelephone,AddressLine1,AddressLine2,City,State,Country,PostalCode")] vwBusinessContactDetail vwBusinessContactDetail)
+        public async Task<IActionResult> Create([Bind("EmployeeID,FirstName,LastName,BirthDate,Position,EmailAddress,Telephone,BusinessTelephone,AddressLine1,AddressLine2,City,State,Country,PostalCode")] vwBusinessContactDetail vwBusinessContactDetail)
         {
             if (ModelState.IsValid)
             {
@@ -106,7 +105,6 @@ namespace HarrisSons.Net.Web.Controllers
             }
 
             ViewData["Position"] = new SelectList(_context.Positions, "Name", "Name", vwBusinessContactDetail.Position);
-            ViewData["Department"] = new SelectList(_context.Departments, "Name", "Name", vwBusinessContactDetail.Department);
             return View(vwBusinessContactDetail);
         }
 
@@ -125,7 +123,6 @@ namespace HarrisSons.Net.Web.Controllers
             }
 
             ViewData["Position"] = new SelectList(_context.Positions, "Name", "Name", vwBusinessContactDetail.Position);
-            ViewData["Department"] = new SelectList(_context.Departments, "Name", "Name", vwBusinessContactDetail.Department);
             return View(vwBusinessContactDetail);
         }
 
@@ -134,7 +131,7 @@ namespace HarrisSons.Net.Web.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("EmployeeID,FirstName,LastName,BirthDate,Position,Department,EmailAddress,Telephone,BusinessTelephone,AddressLine1,AddressLine2,City,State,Country,PostalCode")] vwBusinessContactDetail vwBusinessContactDetail)
+        public async Task<IActionResult> Edit(int id, [Bind("EmployeeID,FirstName,LastName,BirthDate,Position,EmailAddress,Telephone,BusinessTelephone,AddressLine1,AddressLine2,City,State,Country,PostalCode")] vwBusinessContactDetail vwBusinessContactDetail)
         {
             if (id != vwBusinessContactDetail.EmployeeID)
             {
@@ -189,7 +186,6 @@ namespace HarrisSons.Net.Web.Controllers
             }
 
             ViewData["Position"] = new SelectList(_context.Positions, "Name", "Name", vwBusinessContactDetail.Position);
-            ViewData["Department"] = new SelectList(_context.Departments, "Name", "Name", vwBusinessContactDetail.Department);
             return View(vwBusinessContactDetail);
         }
 
